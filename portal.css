@@ -1,0 +1,385 @@
+@CHARSET "ISO-8859-1";
+
+/*Layout*/
+
+*{  
+	margin:0;  
+	padding:0;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	border:0;
+}  
+
+
+html, body { 
+	margin:0;  
+	padding:0;
+	height:100%; 	
+	text-align:center;
+	background: black;
+
+	
+}
+
+a {
+	color: white;
+	text-decoration: none
+}
+
+a:hover, a:focus {
+	text-decoration: underline; 
+/*	color: #66CCFF;*/
+	font-weight:bold;
+	font-size: 0.95em;
+}
+
+td {
+	padding:5px;
+}
+
+textarea, select {
+	border: 1px solid #888; 
+}
+
+#background {
+		height:100%;
+		width: 900px; 
+		margin: 0 auto;
+		background-image: url("images/background.png");
+		background-repeat: repeat-y;
+}
+
+
+#page-wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#header {
+	height: 100px;
+	text-align: left;
+	color:white;
+	font-weight:bold;
+	margin:0;  
+	padding:0;
+}
+
+#header-left {
+	display: block;
+	float: left;
+	height:85px;
+	background-image: url("images/icslogo.png?c=1");
+	background-size:85px 85px;
+	background-repeat: no-repeat;
+	font-size: 46px;
+	padding: 10px 0 0 90px ;
+	margin-left: 5px;
+}
+
+#header-right {
+		display: block;
+		float: right;
+		font-size: 28px;
+		padding: 30px 0 0 0 ;
+		margin-right: 5px;
+}
+
+
+#content {
+	margin:0;  
+	padding:0;
+	background-repeat: no-repeat;
+	color:white;
+	font-size: 14px;
+}
+
+#content .biglinks{
+	font-size: 16px;
+}
+
+#content h1{
+	font-size: 26px;
+	margin: 5px;	
+}
+
+#content h2{
+	font-size: 20px;	
+}
+
+
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9 {
+	display: inline-block;
+	padding: 0;
+	float: left;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+
+#s1 {
+	width: 290px;
+	height: 190px;
+	background-image: url("images/s1.jpg");
+}
+
+#s2 {
+	width: 290px;
+	height: 190px;
+	background-image: url("images/s2.jpg");
+}
+
+#s3 {
+	width: 190px;
+	height: 190px;
+	background-image: url("images/s3.jpg");
+}
+
+
+#s4 {
+	width: 190px;
+	height: 190px;
+	background-image: url("images/s4.jpg");
+}
+
+#s5 {
+	width: 290px;
+	height: 190px;
+	background-image: url("images/s5.jpg");
+}
+
+#s6 {
+	width: 290px;
+	height: 190px;
+	background-image: url("images/s6.jpg");
+	text-align:left;
+
+}
+
+#s7 {
+	width: 390px;
+	height: 200px;
+	background-image: url("images/s7.jpg");
+}
+
+#s8 {
+	width: 190px;
+	height: 200px;
+	background-image: url("images/s8.jpg");
+}
+
+#s9 {
+	width: 190px;
+	height: 200px;
+	background-image: url("images/s9.jpg");
+}
+
+#login {
+	margin:10px;
+}
+
+#clock {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: -60px 0 0 0;
+	left: -15px;
+	top: 0px;
+	width: 150px;
+	height: 55px;
+	float:right;
+	font-size:12px;
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	text-align: right;	
+}
+
+/*
+#clock {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: -60px 0 0 0;
+	left: -15px;
+	top: 0px;
+	width: 130px;
+	height: 55px;
+	float:right;
+	font-size:12px;
+	font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+	text-align: right;	
+}
+
+*/
+
+#clockTimeID {
+	font-size:30px;
+}
+
+div.spacer{
+	margin:0;
+	padding:0;
+	clear:both;
+	height:10px;
+	display:block;
+	font-size:2px;
+}
+
+table.lib {
+	margin: 0 auto;
+	width:100%;
+	text-align: center;
+}
+
+table.lib td {
+	padding: 0;
+	margin: 0;
+}
+
+.button {
+	padding: 2px 5px;
+}
+
+
+#footer {
+	height:50px;
+	margin: 0 5px 0 5px;  
+	padding:0;
+	color:white;
+	font-size: 14px;
+	text-align: right;
+}
+
+#footer p {
+	margin-bottom: 5px;
+}
+
+.smalltext{
+	font-size: 10;
+}
+
+
+#message {
+
+	
+}
+#message .warning {
+	font-weight:bold;	
+	background: #D00000;
+	color: white;
+	padding : 5px;
+	margin : 0 5px 10px 5px;
+	border-radius: 10px;	
+}
+
+#message .news {
+	background: #009933;
+	color: white;
+	padding : 5px;
+	margin : 0 5px 10px 5px;
+	border-radius: 10px;
+}
+
+#message .parentmsg {
+	background: #0000E0;
+	color: white;
+	padding : 5px;
+	margin : 0 5px 10px 5px;
+	border-radius: 10px;
+}
+
+
+
+#help-content {
+	margin:0;  
+	padding:20px;
+	background: white;
+	color:black;
+	font-size: 14px;
+	text-align: left;
+}
+
+
+#help-content h1{
+	font-size: 24px;
+	color:#003399;
+	margin-top:10px;
+}
+
+#help-content h2{
+	font-size: 18px;
+	color:#0066CC;
+	margin-top:10px;
+}
+
+
+#help-content a {
+	color: blue;
+	text-decoration: underline;
+}
+
+#help-content a:hover {
+	text-decoration: underline; 
+	color: blue;
+	font-weight:normal;
+}
+
+#help-content div {
+	margin-left:30px;
+}
+
+
+td {
+	color : white;
+}
+
+/* not used */
+
+#google {
+	display: block;
+	width: 100px;
+	height: 50px;
+	background: red;
+	margin: 5px;
+	float: left;
+}
+
+#ie {
+	margin:0;
+	padding:0;
+}
+#schoology {
+
+	width: 100px;
+	height: 70px;
+	background: green;
+	margin: 5px;
+	float: left;
+}
+
+#powerschool {
+	display: block;
+	width: 100px;
+	height: 50px;
+	background: blue;
+	margin: 5px;
+	float: left;
+}
+
+
+.simpletab {
+	border-collapse: collapse;
+	border:black 1px solid;
+	margin-top:20px;
+	color:black;
+	font-size: 14px;
+
+}
+
+.simpletab th{
+	border:black 1px solid;
+	font-size: 18px;
+	color:#0066CC;
+	margin-top:10px;
+}
+.simpletab td{
+	border:black 1px solid;
+	color:black;
+}
