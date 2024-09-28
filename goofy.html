@@ -20,6 +20,23 @@
 		function startClock() {
 			clockDate = new Date;
 			clockTime = zeroAdd(clockDate.getHours()) + ":" + zeroAdd(clockDate.getMinutes()) + ":" + zeroAdd(clockDate.getSeconds());
+         month = today.getMonth();
+         year = today.getFullYear();
+         day = today.getDate();
+         monthList = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+    ];
 			document.getElementById("clockTimeID").innerHTML = clockTime;
 			setTimeout("startClock()", 1000);
 		}
@@ -224,8 +241,8 @@
 			<div id="footer">
 				<p> 
 				</p>
-				<p class="smalltext">©
-					2013-2024 International Christian School. All rights reserved. (P1)
+				<p class="smalltext">(:D) 
+					2024-2025 All carbonaras served.
             </p>
             <p class="smalltext">
                   :3 hehe
