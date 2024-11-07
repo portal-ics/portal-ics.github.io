@@ -20,23 +20,6 @@
 		function startClock() {
 			clockDate = new Date;
 			clockTime = zeroAdd(clockDate.getHours()) + ":" + zeroAdd(clockDate.getMinutes()) + ":" + zeroAdd(clockDate.getSeconds());
-         month = today.getMonth();
-         year = today.getFullYear();
-         day = today.getDate();
-         monthList = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-    ];
 			document.getElementById("clockTimeID").innerHTML = clockTime;
 			setTimeout("startClock()", 1000);
 		}
@@ -44,13 +27,6 @@
 		function zeroAdd(Value) {
 			return (Value > 9) ? "" + Value : "0" + Value;
 		}
-
-		function schoologyLink() {
-			alert("In 21-22 school year ICS will migrate the LMS to Schoology. Early teacher access to Schoology for preparation work only.");
-		}
-
-
-
 
 	</script>
 
@@ -122,30 +98,32 @@
 				<div id="s5" class="biglinks">
 					<h1>Other Stuff</h1>
                   <a href="https://my.mheducation.com/secure" target="_blank">
+                     <img src="https://my.mheducation.com/favicon.ico" width="13px" height="13px"></img>
                      McGraw Hill
                   </a><br>
-                  <a href="https://icshk.sites.noteflight.com/" target="_blank">
-                     Noteflight
+                  <a href="https://home.makemusic.com/learn" target="_blank">
+                     <img src="https://home.makemusic.com/favicon.png" width="13px" height="13px"></img>
+                     Smartmusic
                   </a><br>
                   <a href="https://docs.google.com/" target="_blank">
-                     Google Docs
                      <img src="https://ssl.gstatic.com/docs/documents/images/kix-favicon-2023q4.ico" width="13px" height="13px"></img>
+                     Google Docs
                   </a><br>
                   <a href="https://sheets.google.com/" target="_blank">
-                     Google Sheets
                      <img src="https://ssl.gstatic.com/docs/spreadsheets/spreadsheets_2023q4.ico" width="13px" height="13px"></img>
+                     Google Sheets
                   </a><br>
                   <a href="https://slides.google.com/" target="_blank">
-                     Google Slides
                      <img src="https://ssl.gstatic.com/docs/presentations/images/favicon-2023q4.ico" width="13px" height="13px"></img>
+                     Google Slides
                   </a><br>
                   <a href="https://drawings.google.com/" target="_blank">
-                     Google Drawings
                      <img src="https://ssl.gstatic.com/docs/drawings/images/favicon5.ico" width="13px" height="13px"></img>
+                     Google Drawings
                   </a><br>
                   <a href="https://drive.google.com/" target="_blank">
-                     Google Drive
                      <img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" width="13px" height="13px"></img>
+                     Google Drive
                   </a><br>
 
 				</div>
